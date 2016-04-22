@@ -1,0 +1,13 @@
+{
+  "name": "myapp-xsjs",
+  "version": "1.0.0",
+  "description": "XSJS Backend",
+  "dependencies": {
+    "sap-xsjs": "1.2.4",
+    "sap-xsenv": "1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node xsjs.js"
+  }
+}

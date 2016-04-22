@@ -1,0 +1,12 @@
+{
+	"role":{
+		"name": "myapp.roles::Role",
+		"object_privileges":[
+			{
+				"name": "myapp.data::Context.Entity",
+				"type": "TABLE",
+				"privileges": [ "SELECT" ]
+			}	
+		]
+	}
+}

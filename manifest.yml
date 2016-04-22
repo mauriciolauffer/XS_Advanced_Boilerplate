@@ -1,0 +1,28 @@
+---
+applications:
+- name: myapp-ui
+  path: web
+  services:
+  - myapp-uaa
+  env:
+    destinations: >
+      [
+        {"name":"nodejs", "url":"https://hanasps11:53002", "forwardAuthToken": true}
+      ]
+
+- name: myapp-db
+  no-route: true
+  memory: 128M
+  path: db
+  services:
+  - myapp-hdi-container
+
+- name: myapp-xsjs
+  path: xsjs
+  port: 53002
+  services:
+    - myapp-hdi-container
+    - myapp-uaa       
+  env:
+    HANA_SERVICE_NAME: myapp-hdi-container
+    UAA_SERVICE_NAME: myapp-uaa  

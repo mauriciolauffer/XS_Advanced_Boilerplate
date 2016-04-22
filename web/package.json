@@ -1,0 +1,11 @@
+{
+  "name": "myapp-ui-approuter",
+  "version": "1.0.0",
+  "dependencies": {
+    "approuter": "1.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node node_modules/approuter/approuter.js"
+  }
+}

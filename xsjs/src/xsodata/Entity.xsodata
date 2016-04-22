@@ -1,0 +1,4 @@
+service namespace "myapp.services" {
+    "myapp.data::Context.Entity" 
+	  as "ContextEntity";
+}

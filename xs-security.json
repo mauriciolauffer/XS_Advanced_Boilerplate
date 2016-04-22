@@ -1,0 +1,18 @@
+{
+    "xsappname": "myapp-ui",
+    "scopes"        : [
+                        {
+                          "name"                 : "myapp-ui.Display",
+                           "description"         : "display"
+                        }
+                      ],
+    "role-templates": [
+                        {
+                          "name"                 : "Viewer",
+                          "description"          : "View all records",
+                          "scope-references"     : [
+                                                     "myapp-ui.Display"
+                                                   ]                                           
+                        }
+                      ]
+}

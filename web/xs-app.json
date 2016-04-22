@@ -1,0 +1,13 @@
+{
+  "welcomeFile": "index.html",
+  "routes": [
+    {
+	    "source": "(.*)(.xsjs)",
+      	    "destination": "nodejs"
+    },
+    {
+	    "source": "(.*)(.xsodata)",
+	    "destination": "nodejs"
+    }
+  ]
+}

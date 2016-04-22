@@ -1,0 +1,5 @@
+{
+    "name":      "myapp",
+    "subfolder": "append",
+    "cascade":   false
+}
